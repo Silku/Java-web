@@ -49,7 +49,7 @@ public class StringEx_3 {
 		System.out.println(Integer.toString(i) + Integer.toString(j));
 		System.out.println((int)Double.parseDouble(s_Num) + (int)Double.parseDouble(s_Num2));
 		System.out.println("d_Num + d_Num2: " + (d_Num+d_Num2));
-		System.out.println("d_Num, d_Num2의 문자열 합 : " + Double.toString(d_Num) + Double.toString(d_Num2));
+		System.out.println("d_Num, d_Num2의 문자열 합 : " + Double.toString(d_Num) +", " + Double.toString(d_Num2));
 		
 		
 		
