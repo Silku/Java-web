@@ -13,7 +13,7 @@ public class ScannerEx1 {
 		str = sc.nextLine();
 		//nextLine은 사용자의 입력을 기다림.
 		System.out.println("입력하신 정보는 " + str + "입니다.");
-		
+	
 	}
 
 }
