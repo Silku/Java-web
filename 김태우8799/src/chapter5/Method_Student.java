@@ -135,18 +135,21 @@ public class Method_Student {
 						System.out.println("학생 전체 조회");
 						System.out.println("--------------");
 						ms.studentOutput(1, "");
+						
 					} else if(select.equals("2")) {
 						System.out.println("이름으로 검색");
 						System.out.println("--------------");
 						System.out.print("검색할 이름: ");
 						String name = ms.sc.nextLine();
 						ms.studentOutput(2, name);
+						
 					} else if(select.equals("3")) {
 						System.out.println("학교명으로 검색");
 						System.out.println("--------------");
 						System.out.print("검색할 학교명: ");
 						String name = ms.sc.nextLine();
 						ms.studentOutput(3, name);
+						
 					} else if(select.equals("b")) {
 						sLoop = false;
 					} else {
