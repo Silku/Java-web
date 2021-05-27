@@ -2,8 +2,6 @@ package chapter6;
 
 import java.util.Scanner;
 
-public 
-
 public class CarTest {
 	Scanner sc = new Scanner(System.in);
 	
@@ -27,30 +25,26 @@ public class CarTest {
 		return select;
 	}
 
-	public Scanner getSc() {
-		return sc;
-	}
-
 	public static void main(String[] args) {
 		CarTest ct = new CarTest();
 		
-		Car tesla1 = new Car();
+		Car tesla1 = new Car("TESLA","Model S","RED",300);
 		Car tesla2 = new Car("TESLA", "Model 3", "BLACK", 280);
 		Car tesla3 = new Car("TESLA", "Model X", "WHITE", 290);
 		
-		tesla1.setCompany("TESLA");
-		tesla1.setModel("Model S");
-		tesla1.setColor("RED");
-		tesla1.setMaxSpeed(300);
-		tesla1.setSpeed(0);
+//		tesla1.company = "TESLA";
+//		tesla1.model = "Model S";
+//		tesla1.color = "RED";
+//		tesla1.maxSpeed = 300;
+//		tesla1.speed = 0;
 		
 		
 		boolean mloop = true;
 		
 		while(mloop) {
-			System.out.println("1. " + tesla1.getModel());
-			System.out.println("2. " + tesla2.getModel());
-			System.out.println("3. " + tesla3.getModel());
+			System.out.println("1. " + tesla1);
+			System.out.println("2. " + tesla2);
+			System.out.println("3. " + tesla3);
 			System.out.print("컨트롤할 차량을 선택해 주세요: ");
 			String select = ct.sc.nextLine();
 			
