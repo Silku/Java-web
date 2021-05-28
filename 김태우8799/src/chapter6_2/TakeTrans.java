@@ -27,5 +27,8 @@ public class TakeTrans {
 		kim.showInfo();
 		kim.setMoney(20000);
 		kim.showInfo();
+	
+		
+		
 	}
 }
