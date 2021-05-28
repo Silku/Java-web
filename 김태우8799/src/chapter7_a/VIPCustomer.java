@@ -1,4 +1,4 @@
-package chapter7;
+package chapter7_a;
 //상속
 public class VIPCustomer extends Customer{
 	private int bonusPoint;
@@ -7,12 +7,11 @@ public class VIPCustomer extends Customer{
 	private int agentId; 		//VIP 관리 담당 사원의 아이디
 	private double saleRatio;	//VIP 할인율
 	
-	public VIPCustomer(int id, String name, int agentId) {
-		super(id, name);
+	public VIPCustomer(String name) {
+		super(name);
 		super.setCustomerGrade("VIP");
 		super.setBonusRatio(0.05); //5%적립
 		saleRatio = 0.1;		//10%할인
-		this.agentId = agentId;
 	}
 	@Override
 	public int calcPrice(int price) {
