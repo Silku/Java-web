@@ -8,7 +8,6 @@ abstract class Animal {
 
 class Human extends Animal {
 	public void move() {
-
 		System.out.println("사람 두발로 걷습다");
 	}
 
