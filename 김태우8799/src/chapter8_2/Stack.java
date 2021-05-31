@@ -9,4 +9,5 @@ package chapter8_2;
 public interface Stack {
 	void pushStack(String title);
 	String popStack();
+	int getStackSize();
 }

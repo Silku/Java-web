@@ -11,4 +11,5 @@ package chapter8_2;
 public interface Queue {
 	void enQueue(String title);
 	String deQueue();
+	int getQueueSize();
 }
