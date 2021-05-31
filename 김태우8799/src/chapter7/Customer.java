@@ -8,31 +8,6 @@ public class Customer extends People {
 	private int bonusPoint; 			//보너스포인트
 	private double bonusRatio;		//적립비율
 
-	public Customer() {
-		initCustomer();	
-	}
-	
-	public Customer(int id, String name) {
-		customerId = id;
-		customerName = super.name;
-		//		super(name);
-//		customerGrade = "SILVER";
-//		bonusRatio = 0.01;
-	}
-	private void initCustomer() {
-	}
-	
-	
-	private void initCustomer() {
-		initCustomer();	
-		customerGrade = "SILVER";
-		bonusRatio = 0.01;
-	}
-	
-	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio;
-		return price;
-	}
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -63,8 +38,30 @@ public class Customer extends People {
 	public void setBonusRatio(double bonusRatio) {
 		this.bonusRatio = bonusRatio;
 	}
-	public String showCustomerInfo() {
-		return customerName + "님의 등급은 " + customerGrade + "이며 , 보너스 포인트는 " + bonusPoint + "입니다.";
+	
+	public Customer() {
+		initCustomer();
 	}
 	
+	public Customer(int id, String name) {
+		customerId = id;
+		customerName = name;
+		initCustomer();
+	}
+	
+	private void initCustomer() {
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
+	}
+	
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		return price;
+	}
+	
+	public String showCustomerInfo() {
+		return customerName + "님의 등급은 " + customerGrade + "이며, 보너스 포인트는 "
+				+ bonusPoint + "입니다.";
+	}
 }
+
