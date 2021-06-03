@@ -1,6 +1,6 @@
 package chapters10_2;
 
-public class Member {
+public class Member implements Comparable<Member>{
 	private int memberId;
 	private String memberName;
 	
@@ -28,5 +28,26 @@ public class Member {
 	public String toString() {
 
 		return memberName + "회원님의 아이디는 " + memberId + "입니다.";
+	}
+	@Override
+	public int hashCode() {
+		
+		return memberId;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Member) {
+			Member m = (Member)obj;
+			if(this.memberId == m.memberId) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+		return super.equals(obj);
+	}
+	@Override
+	public int compareTo(Member m) {
+		return this.memberId - m.memberId;
 	}
 }
