@@ -17,7 +17,7 @@ public class MemberArrayList {
 		for (int i = 0; i < arrayList.size(); i++) {
 			Member m = arrayList.get(i);
 			if(m.getMemberId()==memberId) {
-				arrayList.remove(i);
+				System.out.println(arrayList.remove(i)+" 해당 계정 정보를 삭제합니다.");
 				return true;
 			}
 		}
