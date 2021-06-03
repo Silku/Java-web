@@ -17,12 +17,12 @@ public class MemberArrayListTest {
 		}
 		aList.showAllMember();
 		
-		System.out.println("수정할 회원의 아이디를 입력하세요 : ");
+		System.out.println("수정하고자하는 회원의 아이디를 입력하세요 : ");
 		int id = Integer.parseInt(sc.nextLine());
-		System.out.println("수정할 회원의 이름을 입력하세요 : ");
+		System.out.println("새로 수정할 회원이름을 입력하세요 : ");
 		String name = sc.nextLine();
 		aList.modifyMember(id, name);
-		
+		aList.showAllMember();
 		
 		System.out.println("삭제할 회원의 아이디를 입력하세요 :");
 		id = Integer.parseInt(sc.nextLine());
