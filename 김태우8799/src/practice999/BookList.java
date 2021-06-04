@@ -1,11 +1,17 @@
 package practice999;
 
 public class BookList {
- String bookName[] = new String[99999];
-// bookName[] {}
+	String bookName[] = new String[99999];
+	private int bookNumber;
 	
-public BookList() {
-//	System.out.println("도서관에 있는" + + "는 " +  + "권이 있습니다.");
-			
-}
+
+	public BookList(int bookcode, String bookname) {
+		this.bookNumber = bookNumber;
+		this.bookName = bookName;
+	}
+	
+//	String [] book = {"자바","파이썬","씨언어","씨샵","씨쁠쁠"};
+//	public void showBookList(){
+//	System.out.println("도서관에 있는" + + "는 " +  + "권이 있습니다.");			
+//}
 }
