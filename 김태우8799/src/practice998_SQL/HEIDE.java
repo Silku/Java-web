@@ -2,17 +2,27 @@ package practice998_SQL;
 
 public class HEIDE {
 
-	/*조회(select) 
+	/*조회(select) */
 	SELECT
 		*
 	FROM
 		employees;
-	
+
+	/*수정(UPDATE)*/	
+	UPDATE
+		empoyees
+	SET
+		extension = 'x103',
+		officecode = '5',
+	WHERE
+		employeesnumber = '1800';	
+
+	/*
 	WHERE
 		lastname = 'Gerard' 
 	AND firstname =  'Martin';
 	*/
-	/*추가*/
+	/*추가(INSERT) */
 	/*
 	INSERT INTO
 		employees
@@ -66,3 +76,4 @@ public class HEIDE {
 	AND orderNumber < '10160';
 	*/
 }
+**/
