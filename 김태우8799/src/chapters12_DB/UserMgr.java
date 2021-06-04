@@ -18,12 +18,23 @@ public class UserMgr {
 			String sql = null;
 			boolean flag = false;
 			try {
-				
-			}catch{
-				
+				con = pool.getConnection();
+				sql ="select count(user_id) from user where user_id = ? and user_pwd = ?";
+				pstmt = con.prepareStatement(sql);
+				pstmt.setString(1, id);
+				pstmt.setString(2, pwd);
+				rs = pstmt.executeQuery();
+				if(rs.next() && rs.getInt(1) ==1){
+					flag = true;
+				}		
+			}catch(Exception e ){
+				e.printStackTrace();
 			}finally {
-				
+				pool.freeConnection(con, pstmt, rs);
 			}
 			return flag;
 		}
 }
+//next 다음커서로 넘어가라.
+//Exception e 예외처리
+//finally 들어온 데이터를 모두 끊어낸다.
