@@ -41,7 +41,8 @@ public class DBConnectionMgr {
     private Vector connections = new Vector(10);
     private String _driver = "org.gjt.mm.mysql.Driver",
     		 // _url = "jdbc:mysql://127.0.0.1:80/java?useUnicode=true&characterEncoding=EUC_KR",
-    _url = "jdbc:mysql://127.0.0.1:3306/loginex?connectdb?serverTimezone=Asia/Seoul&useSSL=false",
+    //_url = "jdbc:mysql://127.0.0.1:3306/loginex?connectdb?serverTimezone=Asia/Seoul&useSSL=false",
+    _url = "jdbc:mysql://127.0.0.1:3306/swing?connectdb?serverTimezone=Asia/Seoul&useSSL=false",
     _user = "root",
     _password = "toor";
     
