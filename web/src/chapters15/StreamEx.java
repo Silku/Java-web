@@ -31,6 +31,7 @@ public class StreamEx {
 		Writer w; // 문자처리
 
 		InputStreamReader rd = new InputStreamReader(System.in);
+		
 		while (true) {
 			int input = rd.read();
 			if (input != 13 && input != 10) {
