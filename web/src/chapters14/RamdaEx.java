@@ -28,5 +28,6 @@ import java.util.function.Function;
 			String str2 = f.apply(10);
 			System.out.println(str2);
 
+				
 		}
 	}
